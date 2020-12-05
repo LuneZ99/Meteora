@@ -1,10 +1,16 @@
-# ErGo
+# Meteora
 
-A qq-bot named 二狗, 基于 mirai / mirai-http / Garia.
+基于 mirai-http 的 qq-bot，是 [ErGo](https://github.com/corgiclub/ErGo) 的稳定版。
 
-> Cogito, **ergo** sum.
+名字来源于《Re: Creators》中的 メテオラ<sup>Meteora</sup>・エスターライヒ<sup>Österreich</sup>
+
+
+
+> *世界は選択と覚悟を要求する。*
 >
-> 我思，故我在。
+> *The world requires choice and resolution.*
+>
+> *世界迫使人做出选择与觉悟。*
 
 ## Bot 功能
 
@@ -14,10 +20,19 @@ A qq-bot named 二狗, 基于 mirai / mirai-http / Garia.
 - 🧠 AI 续写（基于 CPM-LM）
 - 🖇 视频信息查询（ ✅ Bilibili / ➖ youtube）
 - 📰 今日要闻
-- 📃 聊天记录存储至数据库
+- ~~📃 聊天记录存储至数据库~~
 - 💾 系统信息 / 状态查询
+- 新功能开发中………
+- pixiv 搜图 / 查图 / 跟踪动态
+- Twitter 搜图 / 查图 / 跟踪动态
+- 翻译
+- 
 
 ## 运行方法
+
+#### 直接添加 qq号 1206565965 启用（测试中，请在添加后私聊）。
+
+或本地编译：
 
 build bot 所需 docker 镜像: `cd script/docker-image; sh docker-build.sh`
 
@@ -29,32 +44,5 @@ build bot 所需 docker 镜像: `cd script/docker-image; sh docker-build.sh`
 
 退出正在运行的 bot 容器（不可直接 ctrl+c 或 ctrl+d）: ctrl+p ctrl+q
 
-## Todo list
 
-- [ ] 🔜 今日要闻每日自动发送，寻找支持跳转详细新闻的 api
-- [ ] 🔜 pixiv 搜图
-- [ ] 推特搜图、记录相关功能
-- [x] 每日要闻
-- [ ] 备忘录，自动提醒
-- [ ] 视频详细信息（小程序、直播间、youtube 支持）
-- [x] 聊天记录保存至数据库
-- [ ] 🔜 小游戏（9路围棋，五子棋，黑白棋，象棋，赛马）
-- [ ] 画一个logo
-
-#### 待修复 BUG / issue
-
-- 视频详细信息功能对B站移动端短链接的支持存在判断问题
-- config 加载函数逻辑优化
-- 部分 request 请求速度较慢
-- ~~存储 gif 时帧率错误修复（疑似丢失了帧间隔信息？~~
-
-## 依赖
-
-### CPM-LM-TF2 中文预训练 GPT 模型
-
-源码: https://github.com/qhduan/CPM-LM-TF2
-
-模型下载链接: https://pan.baidu.com/s/1tjbWty2hkbmtCrvV9Qh_SQ 密码: n0nt
-
-or GDrive：https://drive.google.com/drive/folders/1b2sF5sBuR_9zsT8UUijdsAcmFaMZJlpX?usp=sharing
 
