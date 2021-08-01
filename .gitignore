@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-.idea/
+../.idea/
 
 # C extensions
 *.so
@@ -135,7 +135,6 @@ cpm-lm-tf2_v2/
 plugins/log_to_database/pic_cache/
 plugins/pixiv/cache/
 plugins/pixiv/log/
-*.ttf
 
 # ignore local mirai
 mirai/
@@ -143,8 +142,9 @@ mirai/
 
 #ignore config files
 config/*.json
-config.zip
+_old/config.zip
 
 scripts/docker-image/mongodb-linux-x86_64-ubuntu1804-4.4.2.tgz
 database/mongo
 logs/
+

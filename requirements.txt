@@ -1,6 +1,0 @@
-graia-application-mirai==0.10.4
-requests~=2.25.0
-regex~=2020.11.13
-beautifulsoup4
-pymongo==3.5.1
-lxml
